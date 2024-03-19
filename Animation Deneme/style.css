@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* @keyframes displayAnimation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animation {
+  width: 300px;
+  height: 300px;
+  animation-name: displayAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-delay: 2s;
+} */
+
+@keyframes avatarMove {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 200px;
+       
+    }
+    100%{
+        left: 0px;
+        
+    }
+    
+    
+}
+
+@keyframes asideBar {
+
+    0%{
+       width: 0px;
+    }
+    100%{
+        width: 300px;
+    
+    }
+    
+}
+
+
+
+.Avatar{
+    animation-name: avatarMove;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.38,.17,0,1.87);
+    position: relative;
+    animation-delay: 1s;
+    top: 20px;
+}
+.aside{
+    width: 300px;
+    background-color: rgb(49, 49, 49);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation-name: asideBar;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+
+
+    
+}
+.asideBar{
+    padding-top: 30px;
+    color: white;
+    font-size: larger;
+    position: relative;
+    height: 50%;
+    width: 300px;
+   
+
+
+    
+}
+.asideBar h3,h1{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    
+ 
+}
